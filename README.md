@@ -15,6 +15,6 @@ docker compose build
 
 See [extras](./extras) directory for caller script and desktop launcher:
 
-* winbox.sh: the caller script (copy to any place on you PATH)
+* winbox: the caller script (copy to any place on you PATH)
 * com.mikrotik.winbox.desktop: freedesktop launcher (install with desktop-file-install)
 * winbox.png: icon for winbox (copy to /usr/share/pixmaps)
