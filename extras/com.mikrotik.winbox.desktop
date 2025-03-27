@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=Qt;KDE;Utility;X-KDE-Utilities-Network;
+Comment[pt_BR]=
+Comment=
+Exec=/bin/bash -c "$(which winbox)"
+GenericName[pt_BR]=Mikrotik RouterOS Tool
+GenericName=Mikrotik RouterOS Tool
+Icon=/usr/share/pixmaps/winbox.png
+InitialPreference=3
+MimeType=
+Name[pt_BR]=Winbox
+Name=Winbox
+Path=
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

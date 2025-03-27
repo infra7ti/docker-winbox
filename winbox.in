@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+script=$(mktemp)
+
+tail -n +$((LINENO + 5)) "$0" | \
+  bsdtar -C $(dirname ${script}) -xOf - WinBox > ${script} \
+  && chmod +x ${script} && ${script}
+
+rm -f ${script}; exit

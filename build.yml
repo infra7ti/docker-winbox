@@ -1,0 +1,17 @@
+name: winbox
+
+services:
+  builder:
+    build:
+      args:
+        OS_VERSION_ID: ${OS_VERSION_ID}
+      context: ${PWD}
+      dockerfile: ${TARGET_OS}/Dockerfile
+      platforms:
+        - "linux/amd64"
+      tags:
+        - infra7/winbox:${WINBOX_VERSION}-${TARGET_OS}
+        - infra7/winbox:${WINBOX_VERSION}
+        - infra7/winbox:latest
+    image: infra7/winbox
+    network_mode: host

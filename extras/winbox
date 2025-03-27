@@ -1,0 +1,16 @@
+#/bin/bash
+
+xhost +local:docker
+docker run \
+  -dit \
+  --rm \
+  -u $(id -u) \
+  -e DISPLAY=${DISPLAY} \
+  -v /tmp/.X11-unix:/tmp/.X11-unix \
+  -v /dev:/dev \
+  -v $HOME:$HOME \
+  -v $HOME/.local:/.local:rw \
+  -v $HOME/.cache:/.cache:rw \
+  infra7/winbox
+
+exit $?
